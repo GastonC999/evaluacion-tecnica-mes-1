@@ -1,6 +1,12 @@
 package main.java.com.pil.moby.evaluacion_tecnica.segundo_cuestionario;
 
 
+import main.java.com.pil.moby.evaluacion_tecnica.segundo_cuestionario.modelo.pojo.Candidato;
+import main.java.com.pil.moby.evaluacion_tecnica.segundo_cuestionario.modelo.pojo.Tecnologia;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class EvaluacionTecnicaPil2 {
 
     /**
@@ -18,6 +24,7 @@ public class EvaluacionTecnicaPil2 {
 
         // Desarrollo de la consigna 1.
         inicializarCandidatos();
+
         resolverPunto1();
 
         imprimirMensajePunto(2);
@@ -64,7 +71,19 @@ public class EvaluacionTecnicaPil2 {
 
     private static void inicializarCandidatos() {
         // TODO: Realizar implementación.
+        List<Tecnologia> tecnologias = new ArrayList<>();
+        tecnologias.add(new Tecnologia(1L, "Java"));
+        tecnologias.add(new Tecnologia(2L, "Angular"));
+        tecnologias.add(new Tecnologia(3L, "SQL"));
+        tecnologias.add(new Tecnologia(4L, "NoSQL"));
+        tecnologias.add(new Tecnologia(5L, "Vue"));
+        tecnologias.add(new Tecnologia(6L, ".NET"));
+        tecnologias.add(new Tecnologia(7L, "MongoDB"));
+
+
     }
+
+
 
     /**
      * Saludo de bienvenida, ignore el método.

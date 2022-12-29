@@ -82,3 +82,4 @@ public class Candidato {
                 ", tecnologias: " + tecnologias;
     }
 }
+
