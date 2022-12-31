@@ -49,8 +49,11 @@ public class EvaluacionTecnicaPil2 {
 
     }
 
-    private static void resolverPunto1() {
+    private static void resolverPunto1(List<Candidato> candidatos) {
         // TODO: Realizar implementación.
+        for (int i = 0; i < candidatos.size(); i++ ){
+            System.out.println(candidatos.get(i));
+        }
     }
 
     private static void resolverPunto2() {
@@ -69,9 +72,9 @@ public class EvaluacionTecnicaPil2 {
         // TODO: Realizar implementación.
     }
 
-    public void inicializarCandidatos(List<Candidato>) {
+    public static void inicializarCandidatos(List<Candidato> Candidato) {
         // TODO: Realizar implementación.
-        List<Tecnologia> tecnologias = new ArrayList<Tecnologia>();
+        List<Tecnologia> tecnologias = new ArrayList<>();
         tecnologias.add(1, new Tecnologia(1L, "Java"));
         tecnologias.add(2, new Tecnologia(2L, "Angular"));
         tecnologias.add(3, new Tecnologia(3L, "SQL"));
@@ -84,7 +87,14 @@ public class EvaluacionTecnicaPil2 {
         candidatos.add(new Candidato(3L, "Jhon", "Doe", 5000.00, 2));
         candidatos.add(new Candidato(7L, "Matias", "Otamendi", 3000.00, 9));
         candidatos.add(new Candidato(1L, "Joaquin", "Tagliafico", 2000.00, 6));
-        candidatos.add(new Candidato())
+        candidatos.add(new Candidato(4L, "Gastón", "Mac Allister", 5000.50, 1));
+        candidatos.add(new Candidato(5L, "Pablo", "De Paul", 9000.50, 4));
+        candidatos.add(new Candidato(2L, "Lucas", "Di Maria", 6000.00, 7));
+        candidatos.add(new Candidato(10L, "Lionel", "Messi", 10000.10, 10));
+        candidatos.add(new Candidato(9L, "Julian", "Álvarez", 5000.00, 3));
+        candidatos.add(new Candidato(8L, "Lula", "Martinez", 1000.0, 2));
+        candidatos.add(new Candidato(6L, "Agustín", "Dybala", 1000.00, 2));
+
 
     }
 
