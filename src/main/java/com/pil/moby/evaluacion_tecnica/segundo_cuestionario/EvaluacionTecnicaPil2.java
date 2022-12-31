@@ -69,17 +69,22 @@ public class EvaluacionTecnicaPil2 {
         // TODO: Realizar implementación.
     }
 
-    private static void inicializarCandidatos() {
+    public void inicializarCandidatos(List<Candidato>) {
         // TODO: Realizar implementación.
-        List<Tecnologia> tecnologias = new ArrayList<>();
-        tecnologias.add(new Tecnologia(1L, "Java"));
-        tecnologias.add(new Tecnologia(2L, "Angular"));
-        tecnologias.add(new Tecnologia(3L, "SQL"));
-        tecnologias.add(new Tecnologia(4L, "NoSQL"));
-        tecnologias.add(new Tecnologia(5L, "Vue"));
-        tecnologias.add(new Tecnologia(6L, ".NET"));
-        tecnologias.add(new Tecnologia(7L, "MongoDB"));
+        List<Tecnologia> tecnologias = new ArrayList<Tecnologia>();
+        tecnologias.add(1, new Tecnologia(1L, "Java"));
+        tecnologias.add(2, new Tecnologia(2L, "Angular"));
+        tecnologias.add(3, new Tecnologia(3L, "SQL"));
+        tecnologias.add(4, new Tecnologia(4L, "NoSQL"));
+        tecnologias.add(5, new Tecnologia(5L, "Vue"));
+        tecnologias.add(6, new Tecnologia(6L, ".NET"));
+        tecnologias.add(7, new Tecnologia(7L, "MongoDB"));
 
+        List<Candidato> candidatos = new ArrayList<>();
+        candidatos.add(new Candidato(3L, "Jhon", "Doe", 5000.00, 2));
+        candidatos.add(new Candidato(7L, "Matias", "Otamendi", 3000.00, 9));
+        candidatos.add(new Candidato(1L, "Joaquin", "Tagliafico", 2000.00, 6));
+        candidatos.add(new Candidato())
 
     }
 

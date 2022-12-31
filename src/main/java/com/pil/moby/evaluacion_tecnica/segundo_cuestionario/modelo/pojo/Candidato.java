@@ -10,14 +10,16 @@ public class Candidato {
     private Long id;
     private String nombre;
     private String apellido;
+    private Integer aniosExperiencia;
     private Double pretensionSalarial;
     private List<Tecnologia> tecnologias;
 
-    public Candidato(Long id, String nombre, String apellido, Double pretensionSalarial) {
+    public Candidato(Long id, String nombre, String apellido, Double pretensionSalarial, Integer aniosExperiencia) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.pretensionSalarial = pretensionSalarial;
+        this.aniosExperiencia = aniosExperiencia;
         tecnologias = new ArrayList<>();
     }
 
