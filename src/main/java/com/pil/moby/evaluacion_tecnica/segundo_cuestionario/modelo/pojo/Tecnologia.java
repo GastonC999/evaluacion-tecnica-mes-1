@@ -1,15 +1,19 @@
 package main.java.com.pil.moby.evaluacion_tecnica.segundo_cuestionario.modelo.pojo;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Tecnologia {
+
     private Long id;
     private String nombre;
 
-    public Tecnologia(Long id, String nombre) {
-        this.id = id;
-        this.nombre = nombre;
-    }
+
+        public Tecnologia(Long id, String nombre) {
+            this.id = id;
+            this.nombre = nombre;
+        }
 
     public Long getId() {
         return id;
@@ -44,4 +48,5 @@ public class Tecnologia {
     public String toString() {
         return "Tecnologia: " + "id: " + id + ", nombre: " + nombre;
     }
+
 }

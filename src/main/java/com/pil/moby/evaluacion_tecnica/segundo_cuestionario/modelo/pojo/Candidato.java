@@ -14,14 +14,16 @@ public class Candidato {
     private Double pretensionSalarial;
     private List<Tecnologia> tecnologias;
 
-    public Candidato(Long id, String nombre, String apellido, Double pretensionSalarial, Integer aniosExperiencia) {
+
+    public Candidato(Long id, String nombre, String apellido, Double pretensionSalarial, Integer aniosExperiencia, List<Tecnologia> tecnologias) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.pretensionSalarial = pretensionSalarial;
         this.aniosExperiencia = aniosExperiencia;
-        tecnologias = new ArrayList<>();
+        this.tecnologias =  tecnologias;
     }
+
 
     public Long getId() {
         return id;
@@ -83,5 +85,7 @@ public class Candidato {
                 ", pretensionSalarial: " + pretensionSalarial +
                 ", tecnologias: " + tecnologias;
     }
+
+
 }
 
