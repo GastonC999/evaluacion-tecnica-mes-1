@@ -23,7 +23,7 @@ public class EvaluacionTecnicaPil2 {
 
         // Desarrollo de la consigna 1.
         inicializarCandidatos();
-        resolverPunto1();
+        resolverPunto1(inicializarCandidatos());
 
         imprimirMensajePunto(2);
 
@@ -49,9 +49,13 @@ public class EvaluacionTecnicaPil2 {
 
 
 
-    private static void resolverPunto1() {
+    private static void resolverPunto1(List<Candidato> candidatos) {
         // TODO: Realizar implementación.
-        System.out.println(inicializarCandidatos().toString());
+
+        for (int i = 0; i < 1; ++i){
+            System.out.println(candidatos.toString());
+        }
+
     }
 
     private static void resolverPunto2() {
