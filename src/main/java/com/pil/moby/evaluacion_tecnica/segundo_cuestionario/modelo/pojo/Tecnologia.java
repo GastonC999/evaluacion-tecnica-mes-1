@@ -6,14 +6,25 @@ import java.util.Objects;
 
 public class Tecnologia {
 
+    //private  ArrayList[][] nombreTecnologias;
     private Long id;
     private String nombre;
+
 
 
         public Tecnologia(Long id, String nombre) {
             this.id = id;
             this.nombre = nombre;
+
         }
+
+//    public ArrayList[][] getNombreTecnologias() {
+//        return nombreTecnologias;
+//    }
+//
+//    public void setNombreTecnologias(ArrayList[][] nombreTecnologias) {
+//        this.nombreTecnologias = nombreTecnologias;
+//    }
 
     public Long getId() {
         return id;

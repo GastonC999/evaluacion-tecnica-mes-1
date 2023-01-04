@@ -21,11 +21,9 @@ public class EvaluacionTecnicaPil2 {
         imprimirBienvenidaEvaluacionTecnica();
 
         imprimirMensajePunto(1);
-        System.out.println(inicializarCandidatos());
-        System.out.println();
+
         // Desarrollo de la consigna 1.
-
-
+        inicializarCandidatos();
         resolverPunto1();
 
         imprimirMensajePunto(2);
@@ -77,17 +75,67 @@ public class EvaluacionTecnicaPil2 {
 
     public static List<Candidato> inicializarCandidatos() {
         // TODO: Realizar implementación.
+
+        List<Tecnologia> tecnologias1 = new ArrayList<>();
+        tecnologias1.add(new Tecnologia(1L, "Java"));
+        tecnologias1.add(new Tecnologia(2L, "Angular"));
+        tecnologias1.add(new Tecnologia(3L, "SQL"));
+        //////////////////////////////////////////////////////////////////
+        List<Tecnologia> tecnologias2 = new ArrayList<>();
+        tecnologias2.add(new Tecnologia(8L, "NodeJS"));
+        tecnologias2.add(new Tecnologia(1L, "Java"));
+        tecnologias2.add(new Tecnologia(3L, "SQL"));
+        //////////////////////////////////////////////////////////////////
+        List<Tecnologia> tecnologias3 = new ArrayList<>();
+        tecnologias3.add(new Tecnologia(7L, "MongoDB"));
+        tecnologias3.add(new Tecnologia(4L, "NoSQL"));
+        //////////////////////////////////////////////////////////////////
+        List<Tecnologia> tecnologias4 = new ArrayList<>();
+        tecnologias4.add(new Tecnologia(5L, "Vue"));
+        tecnologias4.add(new Tecnologia(3L, "SQL"));
+        tecnologias4.add(new Tecnologia(1L, "Java"));
+        //////////////////////////////////////////////////////////////////
+        List<Tecnologia> tecnologias5 = new ArrayList<>();
+        tecnologias5.add(new Tecnologia(1L, "Java"));
+        //////////////////////////////////////////////////////////////////
+        List<Tecnologia> tecnologias6 = new ArrayList<>();
+        tecnologias6.add(new Tecnologia(1L, "Java"));
+        tecnologias6.add(new Tecnologia(2L, "Angular"));
+        tecnologias6.add(new Tecnologia(3L, "SQL"));
+        //////////////////////////////////////////////////////////////////
+        List<Tecnologia> tecnologias7 = new ArrayList<>();
+        tecnologias7.add(new Tecnologia(3L, "SQL"));
+        tecnologias7.add(new Tecnologia(5L, "Vue"));
+        tecnologias7.add(new Tecnologia(1L, "Java"));
+        //////////////////////////////////////////////////////////////////
+        List<Tecnologia> tecnologias8 = new ArrayList<>();
+        tecnologias8.add(new Tecnologia(4L, "NoSQL"));
+        tecnologias8.add(new Tecnologia(7L, "MongoBD"));
+        tecnologias8.add(new Tecnologia(3L, "SQL"));
+        tecnologias8.add(new Tecnologia(1L, "Java"));
+        //////////////////////////////////////////////////////////////////
+        List<Tecnologia> tecnologias9 = new ArrayList<>();
+        tecnologias9.add(new Tecnologia(6L, ".NET"));
+        tecnologias9.add(new Tecnologia(1L, "Java"));
+        tecnologias9.add(new Tecnologia(2L, "Angular"));
+        //////////////////////////////////////////////////////////////////
+        List<Tecnologia> tecnologias10 = new ArrayList<>();
+        tecnologias10.add(new Tecnologia(1L, "Java"));
+        tecnologias10.add(new Tecnologia(6L, ".NET"));
+        tecnologias10.add(new Tecnologia(2L, "Angular"));
+
+
         List<Candidato> candidatos = new ArrayList<>();
-        candidatos.add(new Candidato(3L, "Jhon", "Doe", 5000D, 2, new Tecnologia(Tecnologia));
-        candidatos.add(new Candidato(7L, "Matias", "Otamendi", 3000.00, 9));
-        candidatos.add(new Candidato(1L, "Joaquin", "Tagliafico", 2000.00, 6));
-        candidatos.add(new Candidato(4L, "Gastón", "Mac Allister", 5000.50, 1));
-        candidatos.add(new Candidato(5L, "Pablo", "De Paul", 9000.50, 4));
-        candidatos.add(new Candidato(2L, "Lucas", "Di Maria", 6000.00, 7));
-        candidatos.add(new Candidato(10L, "Lionel", "Messi", 10000.10, 10));
-        candidatos.add(new Candidato(9L, "Julian", "Álvarez", 5000.00, 3));
-        candidatos.add(new Candidato(8L, "Lula", "Martinez", 1000.0, 2));
-        candidatos.add(new Candidato(6L, "Agustín", "Dybala", 1000.00, 2));
+        candidatos.add(new Candidato(3L, "Jhon", "Doe", 5000D, 2, tecnologias2));
+        candidatos.add(new Candidato(7L, "Matias", "Otamendi", 3000D, 9, tecnologias2));
+        candidatos.add(new Candidato(1L, "Joaquin", "Tagliafico", 2000D, 6, tecnologias3));
+        candidatos.add(new Candidato(4L, "Gastón", "Mac Allister", 5000.50, 1, tecnologias4));
+        candidatos.add(new Candidato(5L, "Pablo", "De Paul", 9000.50, 4, tecnologias5));
+        candidatos.add(new Candidato(2L, "Lucas", "Di Maria", 6000D, 7, tecnologias6));
+        candidatos.add(new Candidato(10L, "Lionel", "Messi", 10000.10, 10, tecnologias7));
+        candidatos.add(new Candidato(9L, "Julian", "Álvarez", 5000D, 3, tecnologias8));
+        candidatos.add(new Candidato(8L, "Lula", "Martinez", 1000D, 2, tecnologias9));
+        candidatos.add(new Candidato(6L, "Agustín", "Dybala", 1000D, 2, tecnologias10));
 
         return candidatos;
 
