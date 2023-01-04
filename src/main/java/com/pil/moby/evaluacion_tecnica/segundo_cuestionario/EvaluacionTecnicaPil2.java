@@ -6,6 +6,7 @@ import org.w3c.dom.ls.LSOutput;
 
 import java.util.ArrayList;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -31,7 +32,7 @@ public class EvaluacionTecnicaPil2 {
         imprimirMensajePunto(2);
 
         // Desarrollo de la consigna 2.
-        resolverPunto2(inicializarCandidatos());
+        resolverPunto2();
 
         imprimirMensajePunto(3);
 
@@ -63,12 +64,12 @@ public class EvaluacionTecnicaPil2 {
 
     private static void resolverPunto2(List<Candidato> candidatos) {
        //  TODO: Realizar implementación.
-//        Stream<String> ordenamiento = (Stream<String>) candidatos.stream()
-//                .map(c -> c.getId().compareTo(c.getId())).peek(System.out::println);
-       candidatos.stream().map(c -> c.getNombre()
-               .concat(" ")
-               .concat(c.getApellido())).flatMap()
-               .forEach(System.out::println);
+      Stream <String> ordenamiento = candidatos.stream()
+              .sorted(Comparator.comparingLong(Candidato::getId))
+              .map(c -> c.getNombre()
+                      .concat(" ")
+                      .concat(c.getApellido()))
+              .peek(System.out::println);
 
 
     }
