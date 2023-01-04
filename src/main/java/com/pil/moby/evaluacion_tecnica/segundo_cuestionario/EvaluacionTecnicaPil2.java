@@ -2,9 +2,12 @@ package main.java.com.pil.moby.evaluacion_tecnica.segundo_cuestionario;
 
 import main.java.com.pil.moby.evaluacion_tecnica.segundo_cuestionario.modelo.pojo.Candidato;
 import main.java.com.pil.moby.evaluacion_tecnica.segundo_cuestionario.modelo.pojo.Tecnologia;
+import org.w3c.dom.ls.LSOutput;
 
 import java.util.ArrayList;
+
 import java.util.List;
+import java.util.stream.Stream;
 
 public class EvaluacionTecnicaPil2 {
 
@@ -28,7 +31,7 @@ public class EvaluacionTecnicaPil2 {
         imprimirMensajePunto(2);
 
         // Desarrollo de la consigna 2.
-        resolverPunto2();
+        resolverPunto2(inicializarCandidatos());
 
         imprimirMensajePunto(3);
 
@@ -58,8 +61,16 @@ public class EvaluacionTecnicaPil2 {
 
     }
 
-    private static void resolverPunto2() {
-        // TODO: Realizar implementación.
+    private static void resolverPunto2(List<Candidato> candidatos) {
+       //  TODO: Realizar implementación.
+//        Stream<String> ordenamiento = (Stream<String>) candidatos.stream()
+//                .map(c -> c.getId().compareTo(c.getId())).peek(System.out::println);
+       candidatos.stream().map(c -> c.getNombre()
+               .concat(" ")
+               .concat(c.getApellido())).flatMap()
+               .forEach(System.out::println);
+
+
     }
 
     private static void resolverPunto3() {
