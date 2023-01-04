@@ -65,7 +65,7 @@ public class EvaluacionTecnicaPil2 {
     private static void resolverPunto2(List<Candidato> candidatos) {
        //  TODO: Realizar implementación.
       Stream <String> ordenamiento = candidatos.stream()
-              .sorted(Comparator.comparingLong(Candidato::getId))
+              .sorted(Comparator.comparingLong(Candidato::getId).reversed())
               .map(c -> c.getNombre()
                       .concat(" ")
                       .concat(c.getApellido()))
