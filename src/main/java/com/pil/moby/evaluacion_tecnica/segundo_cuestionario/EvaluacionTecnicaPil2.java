@@ -1,6 +1,5 @@
 package main.java.com.pil.moby.evaluacion_tecnica.segundo_cuestionario;
 
-
 import main.java.com.pil.moby.evaluacion_tecnica.segundo_cuestionario.modelo.pojo.Candidato;
 import main.java.com.pil.moby.evaluacion_tecnica.segundo_cuestionario.modelo.pojo.Tecnologia;
 
@@ -52,9 +51,7 @@ public class EvaluacionTecnicaPil2 {
 
     private static void resolverPunto1() {
         // TODO: Realizar implementación.
-//        for (Candidato c : candidatos) {
-//            System.out.println(candidatos.toString());
-//        }
+        System.out.println(inicializarCandidatos().toString());
     }
 
     private static void resolverPunto2() {
@@ -126,7 +123,7 @@ public class EvaluacionTecnicaPil2 {
 
 
         List<Candidato> candidatos = new ArrayList<>();
-        candidatos.add(new Candidato(3L, "Jhon", "Doe", 5000D, 2, tecnologias2));
+        candidatos.add(new Candidato(3L, "Jhon", "Doe", 5000D, 2, tecnologias1));
         candidatos.add(new Candidato(7L, "Matias", "Otamendi", 3000D, 9, tecnologias2));
         candidatos.add(new Candidato(1L, "Joaquin", "Tagliafico", 2000D, 6, tecnologias3));
         candidatos.add(new Candidato(4L, "Gastón", "Mac Allister", 5000.50, 1, tecnologias4));
